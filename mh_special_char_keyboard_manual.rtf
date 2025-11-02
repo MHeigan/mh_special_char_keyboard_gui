@@ -1,0 +1,45 @@
+{\rtf1\ansi\deff0
+{\fonttbl{\f0 Segoe UI;}{\f1 Courier New;}}
+\paperw11907\paperh16840\margl1134\margr1134\margt1134\margb1134
+\fs28\b mh_special_char_keyboard – User Manual\b0\fs24\par
+\par
+\fs22\pard\sa200\sb100\qj
+This tool provides a visual keyboard of special characters and symbols. Click a symbol to copy it to the clipboard, or use Shift+Click (or right-click \i Append\i0 ) to add it to the builder area and save to a .txt file.\par
+\par
+\b 1. Requirements\b0\par
+- Python 3.8+ (3.12 recommended)\par
+- Tkinter (included on Windows/macOS; on Linux: \f1 sudo apt-get install python3-tk\f0)\par
+\par
+\b 2. Running the App\b0\par
+\f1
+python -m venv .venv\par
+.venv\Scripts\activate    (Windows)\par
+source .venv/bin/activate (macOS/Linux)\par
+pip install -r requirements.txt\par
+python mh_special_char_keyboard_gui.py\par
+\f0\par
+\b 3. Using the Interface\b0\par
+- \b Categories:\b0  Tabs for Punctuation, Quotes, Currency, Math, Arrows, Bullets & Stars, Brackets, Latin Diacritics, Greek, Technical, Box Drawing.\par
+- \b Copy:\b0  Click a symbol to copy it to the clipboard.\par
+- \b Append:\b0  Shift+Click a symbol (or Right-click \i Append\i0 ) to add it to the builder.\par
+- \b Save:\b0  Use \i Save to .txt\i0  to export builder contents.\par
+- \b Symbol Info:\b0  See name, Unicode (U+XXXX), decimal code, HTML entities, and a Windows Alt-code hint.\par
+- \b Search:\b0  Search by character or partial Unicode name; results appear in a temporary tab.\par
+\par
+\b 4. Keyboard Equivalents\b0\par
+- Windows Alt codes are shown when applicable (generally U+0020..U+00FF). For wider Unicode, copy/paste is recommended.\par
+\par
+\b 5. Packaging (Optional)\b0\par
+Build a Windows executable using PyInstaller:\par
+\f1
+pip install pyinstaller\par
+pyinstaller --noconfirm --onefile --windowed ^\par
+  --name mh_special_char_keyboard ^\par
+  --version-file file_version_info.txt ^\par
+  mh_special_char_keyboard_gui.py\par
+\f0\par
+This will generate a binary in the \i dist\i0  folder.\par
+\par
+\b 6. License\b0\par
+Released under the MIT License. See \i LICENSE\i0 .\par
+}

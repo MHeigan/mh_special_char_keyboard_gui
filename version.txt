@@ -1,0 +1,4 @@
+version=1.0.0
+name=mh_special_char_keyboard
+build_date=2025-11-02
+author=Martin Heigan

@@ -1,0 +1,2 @@
+# This project has no 3rd-party Python dependencies.
+# Tkinter comes with most Python installers. On Linux you may need: sudo apt-get install python3-tk

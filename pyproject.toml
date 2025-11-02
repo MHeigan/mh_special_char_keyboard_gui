@@ -1,0 +1,10 @@
+[project]
+name = "mh_special_char_keyboard"
+version = "1.0.0"
+description = "A Tkinter app for copying special characters and building symbol strings."
+authors = [{name = "Martin Heigan"}]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.pyinstaller]
+# Example hook area; not used directly by PyInstaller but documented for future tooling
